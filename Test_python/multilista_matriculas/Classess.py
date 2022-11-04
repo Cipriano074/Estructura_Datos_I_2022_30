@@ -62,9 +62,9 @@ class Lista_estudiantes:
     
     def add_node(self, value):
         if self.head_estudiante is None:
-            self.tail_estudiante = self.head_estudiante = Node_Curso(value)
+            self.tail_estudiante = self.head_estudiante = Node_Estudiante(value[0], value[1])
         else:
-            self.tail_estudiante.next_estudiante = Node_Curso(value)
+            self.tail_estudiante.next_estudiante = Node_Estudiante(value[0], value[1])
             self.tail = self.tail_estudiante.next_estudiante
         return self.tail_estudiante
     
@@ -74,9 +74,9 @@ class Lista_estudiantes:
             
     def add_node_as_head(self, value):
         if self.head_estudiante is None:
-            self.tail_estudiante = self.head_estudiante = Node_Curso(value)
+            self.tail_estudiante = self.head_estudiante = Node_Estudiante(value)
         else:
-            self.head_estudiante = Node_Curso(value, self.head_estudiante)
+            self.head_estudiante = Node_Estudiante(value, self.head_estudiante)
         return self.head_estudiante
 
 class LinkedList:
