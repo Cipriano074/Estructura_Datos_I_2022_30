@@ -10,6 +10,6 @@ print(lista_simple.head.Lista_matriculados)
 
 estudiante = [["Juan","01"], ["Maria","02"],["Carlos","03"]]
 
-for i in range(len(lista_simple)):
-    print(estudiante[i])
+for i, obj in enumerate(lista_simple):
+    print(estudiante[i], obj)
 
